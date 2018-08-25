@@ -1,0 +1,21 @@
+server:
+  port: 2222
+
+spring:
+  application:
+    name: stream-app1
+  datasource:
+    url: jdbc:mysql://127.0.0.1:3306/personal
+    driver-class-name: com.mysql.jdbc.Driver
+    username: root
+    password: 123
+  rabbitmq:
+    host: localhost
+    port: 5672
+    username: guest
+    password: guest
+
+xs:
+  amap:
+    key: 123456
+    configDistrict: http://restapi.amap.com/v3/config/district?key=${xs.amap.key}
