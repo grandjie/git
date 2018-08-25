@@ -43,9 +43,6 @@ public class AddressManager {
     @GetMapping(value = "/add")
     @Transactional
     public String listByUser(@RequestParam(required = false) String area, @RequestParam(required = false) String city) {
-//        INSERT INTO `address` (`id`, `adcode`, `area`, `city`, `citycode`, `create_date`, `detail`, `latitude`, `longitude`, `phone_number`, `province`, `receiver_name`, `user_id`)
-//VALUES
-//	('00cf9ece-7366-49ac-9815-c29a9aa9c640', '310105', '神州智慧天地', '上海市', '021', '2018-06-11 20:27:46', '5B', 31.218081, 121.356567, '13641728655', '上海市', '倪耀', '93c560de-f85f-4838-abd0-c2a45936658e');
         AddressEntity entity = new AddressEntity();
         entity.setArea(area);
         entity.setCity(city);
