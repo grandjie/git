@@ -14,6 +14,6 @@ public class Test2 {
                 .multiply(BigDecimal.valueOf(20));
         System.out.println(BigDecimal.valueOf(18.8).subtract(subtract).setScale(2, RoundingMode.HALF_DOWN));
         System.out.println(subtract);
-        //33
+        //3344
     }
 }
